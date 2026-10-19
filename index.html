@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>U.A.R. | Unidad de Análisis y Respuesta - Ciberseguridad Ética</title>
+<title>U.A.R. | Ciberseguridad Ética para PYMES - Apodaca N.L.</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -37,7 +37,7 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
 </style>
 </head>
 <body>
-<div class="header"><div class="header-inner"><div class="brand"><img src="logo.jpg" alt="UAR"><b>U.A.R.</b></div><div class="menu"><a href="#servicios">SERVICIOS</a><a href="#lab">LABORATORIO FREE</a><a href="#contacto">CONTACTO</a></div></div></div>
+<div class="header"><div class="header-inner"><div class="brand"><img src="logo.png" alt="UAR"><b>U.A.R.</b></div><div class="menu"><a href="#servicios">SERVICIOS</a><a href="#lab">LABORATORIO FREE</a><a href="#contacto">CONTACTO</a></div></div></div>
 
 <div class="hero">
 <div>
@@ -46,7 +46,7 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
 <p class="sub">Unidad especializada en auditoría defensiva y automatización segura. Liderada por Krusty Hack - Meta Bug Bounty Hunter. 100% legal, con contrato y alcance definido.</p>
 <div class="btns"><a href="#servicios" class="btn btn-black">Ver servicios</a><a href="#lab" class="btn btn-white">Herramientas gratuitas</a></div>
 </div>
-<div><img class="main" src="logo.jpg" alt="U.A.R."></div>
+<div><img class="main" src="logo.png" alt="U.A.R. Unidad de Análisis y Respuesta"></div>
 </div>
 
 <div id="lab" class="sec" style="background:#f8fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
@@ -55,12 +55,12 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
 <div class="grid">
 <div class="tool"><h4>🔑 Generador Contraseña 18 chars</h4><button onclick="document.getElementById('p1').textContent=Array.from({length:18},()=> 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789!@#$%'[Math.floor(Math.random()*58)]).join('')">Generar</button><div id="p1" class="mono">Click...</div></div>
 <div class="tool"><h4>🔐 SHA256 Verificador</h4><input id="s1" placeholder="Texto..."><button onclick="crypto.subtle.digest('SHA-256',new TextEncoder().encode(document.getElementById('s1').value||'UAR')).then(b=>document.getElementById('o2').textContent=Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join(''))">Calcular hash</button><div id="o2" class="mono">...</div></div>
-<div class="tool"><h4>🔤 Base64 Encode/Decode</h4><input id="b1" placeholder="Texto..."><button onclick="try{document.getElementById('bo').textContent=btoa(document.getElementById('b1').value)}catch(e){document.getElementById('bo').textContent='Error: '+e}">Encode</button><button style="background:#fff;color:#0f172a;border:1px solid #e2e8f0;margin-top:6px" onclick="try{document.getElementById('bo').textContent=atob(document.getElementById('b1').value)}catch(e){document.getElementById('bo').textContent='No es Base64 válido'}">Decode</button><div id="bo" class="mono">...</div></div>
+<div class="tool"><h4>🔤 Base64 Encode/Decode</h4><input id="b1" placeholder="Texto..."><button onclick="try{document.getElementById('bo').textContent=btoa(document.getElementById('b1').value)}catch(e){document.getElementById('bo').textContent='Error'}">Encode</button><button style="background:#fff;color:#0f172a;border:1px solid #e2e8f0;margin-top:6px" onclick="try{document.getElementById('bo').textContent=atob(document.getElementById('b1').value)}catch(e){document.getElementById('bo').textContent='No es Base64 válido'}">Decode</button><div id="bo" class="mono">...</div></div>
 <div class="tool"><h4>🔗 URL Encode/Decode</h4><input id="u1" placeholder="https://ejemplo.com?test=1"><button onclick="document.getElementById('uo').textContent=encodeURIComponent(document.getElementById('u1').value)">Encode</button><button style="background:#fff;color:#0f172a;border:1px solid #e2e8f0;margin-top:6px" onclick="document.getElementById('uo').textContent=decodeURIComponent(document.getElementById('u1').value)">Decode</button><div id="uo" class="mono">...</div></div>
 <div class="tool"><h4>🛡️ Revisión de Enlaces (2/24h)</h4><input id="v1" placeholder="https://sospechoso.com"><button id="vb" onclick="let c=parseInt(localStorage.getItem('uar_scan')||'0');if(c>=2){document.getElementById('ov').textContent='Límite 2/24h alcanzado. Contacto: soporte@uar.is-a.dev';return}let v=document.getElementById('v1').value||'demo.com';document.getElementById('ov').textContent=(Math.random()>0.4?'✅ Sin patrones sospechosos':'⚠️ Revisión manual recomendada')+' | '+v+' | '+(c+1)+'/2';localStorage.setItem('uar_scan',c+1);this.textContent='Revisar ('+(c+2)+'/2)';if(c+1>=2)this.disabled=true">Revisar (1/2)</button><div id="ov" class="mono" style="color:#475569">Uso educativo. Límite anti-abuso.</div></div>
 <div class="tool"><h4>🌐 Mi Info de Conexión</h4><button onclick="document.getElementById('ip').textContent='Navegador: '+navigator.userAgent.slice(0,80)+'... | Idioma: '+navigator.language+' | Pantalla: '+screen.width+'x'+screen.height">Ver info básica</button><div id="ip" class="mono">Click...</div></div>
-<div class="tool"><h4>📧 Generador Passphrase Segura</h4><button onclick="const w=['luna','fuego','cielo','roca','rio','bosque','acero','nube','trueno','cobre'];let p=[];for(let i=0;i<4;i++)p.push(w[Math.floor(Math.random()*w.length)]+'-'+Math.floor(Math.random()*99));document.getElementById('pp').textContent=p.join('-')">Generar 4 palabras</button><div id="pp" class="mono">Click...</div></div>
-<div class="tool"><h4>🔍 Cabeceras de Seguridad (Guía)</h4><p style="font-size:10px;color:#64748b;margin-top:6px">Recomendamos verificar: HSTS, CSP, X-Frame-Options, etc.</p><button onclick="document.getElementById('hc').textContent='✅ Recomendado: Strict-Transport-Security: max-age=31536000 | Content-Security-Policy: default-src self | X-Frame-Options: DENY | Revisa tu sitio en securityheaders.com'">Ver checklist</button><div id="hc" class="mono">Click...</div></div>
+<div class="tool"><h4>📧 Generador Passphrase</h4><button onclick="const w=['luna','fuego','cielo','roca','rio','bosque','acero','nube','trueno','cobre'];let p=[];for(let i=0;i<4;i++)p.push(w[Math.floor(Math.random()*w.length)]+'-'+Math.floor(Math.random()*99));document.getElementById('pp').textContent=p.join('-')">Generar 4 palabras</button><div id="pp" class="mono">Click...</div></div>
+<div class="tool"><h4>🔍 Cabeceras Seguridad</h4><button onclick="document.getElementById('hc').textContent='✅ Recomendado: HSTS max-age=31536000 | CSP default-src self | X-Frame-Options DENY | Revisa en securityheaders.com'">Ver checklist</button><div id="hc" class="mono">Click...</div></div>
 </div>
 </div>
 
@@ -72,12 +72,12 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
 <div class="card"><h3>⚔️ Auditoría Pro Bug Bounty</h3><p>Reporte profesional estilo Meta.</p><div class="price">$1,999 MXN <em>/ reporte</em></div></div>
 <div class="card"><h3>👑 Plan Empresarial</h3><p>Monitoreo mensual + app alertas.</p><div class="price">$4,500 <em>/ mes</em></div></div>
 <div class="card"><h3>🤖 Bot Auto-Publica</h3><p>Contenido propio, respeta políticas.</p><div class="price">$299 <em>/ mes</em></div></div>
-<div class="card" style="border-color:#0f172a"><h3>📢 Bot Marketing Ético 🔥</h3><p>Base propia con opt-in.</p><div class="price">$499 <em>/ mes</em></div></div>
+<div class="card" style="border-color:#0f172a"><h3>📢 Bot Marketing Ético</h3><p>Base propia con opt-in.</p><div class="price">$499 <em>/ mes</em></div></div>
 <div class="card"><h3>💚 WhatsApp API Oficial</h3><p>API oficial Meta.</p><div class="price">$699 <em>/ mes</em></div></div>
 </div>
 </div>
 
-<div class="ethics"><div class="ethics-inner"><div><h2 style="font-size:12px;letter-spacing:3px;color:#fff">COMPROMISO WHITE HAT</h2><p style="margin-top:10px;font-size:12px">100% ético: solo auditorías autorizadas, divulgación responsable, APIs oficiales, cumplimiento LFPDPPP.</p></div><div style="background:#1e293b;border:1px solid #334155;border-radius:14px;padding:18px"><p style="font-size:11px;color:#94a3b8"><b style="color:#fff">Contacto oficial:</b><br>soporte@uar.is-a.dev<br>contacto@uar.is-a.dev<br><br>Apodaca, N.L. México<br>Atención remota nacional<br><br>Futuro: soporte@uar.mx | security@uar.mx</p></div></div></div>
+<div class="ethics"><div class="ethics-inner"><div><h2 style="font-size:12px;letter-spacing:3px;color:#fff">COMPROMISO WHITE HAT</h2><p style="margin-top:10px;font-size:12px">100% ético: auditorías autorizadas, divulgación responsable, APIs oficiales, LFPDPPP.</p></div><div style="background:#1e293b;border:1px solid #334155;border-radius:14px;padding:18px"><p style="font-size:11px;color:#94a3b8"><b style="color:#fff">Contacto oficial:</b><br>soporte@uar.is-a.dev<br>contacto@uar.is-a.dev<br><br>Apodaca, N.L. México<br>Atención remota nacional<br><br>Futuro: soporte@uar.mx</p></div></div></div>
 
 <div id="contacto" class="sec"><h2>CONTACTO</h2><p class="lead">Respuesta en 24h hábiles. Evaluación inicial sin costo PYME.</p></div>
 <div class="footer">© 2026 U.A.R. - UNIDAD DE ANÁLISIS Y RESPUESTA | KRUSTY HACK | CIBERSEGURIDAD ÉTICA<br>TODOS LOS SERVICIOS REQUIEREN AUTORIZACIÓN EXPRESA • HECHO EN MÉXICO</div>
