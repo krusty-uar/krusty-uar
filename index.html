@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>U.A.R. | Unidad de Análisis y Respuesta</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U.A.R. | Ciberseguridad Etica</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a}
+.header{border-bottom:1px solid #e2e8f0;background:#fff;position:sticky;top:0;z-index:20}
+.header-inner{max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:10px}.brand img{width:38px;height:38px;object-fit:contain;border-radius:6px;background:#000}.brand b{letter-spacing:4px;font-size:14px}
+.menu a{font-size:11px;font-weight:600;color:#475569;text-decoration:none;margin-left:18px}
+.hero{max-width:1200px;margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.hero img.main{width:100%;max-width:520px;border-radius:18px;background:#000}
+.kicker{font-size:10px;letter-spacing:2px;font-weight:700;color:#475569;background:#f1f5f9;padding:6px 12px;border-radius:999px;display:inline-block}
+.h1{font-size:clamp(28px,4vw,42px);font-weight:800;line-height:1.1;margin:14px 0 12px}
+.sub{font-size:13px;color:#475569;line-height:1.7;max-width:520px}
+.btn{padding:12px 20px;border-radius:10px;font-size:11px;font-weight:700;text-decoration:none}
+.btn-black{background:#0f172a;color:#fff}.btn-white{border:1px solid #e2e8f0;color:#334155;background:#fff}
+.sec{max-width:1200px;margin:0 auto;padding:56px 24px}
+.sec h2{font-size:12px;letter-spacing:3px;font-weight:800}
+.lead{color:#64748b;font-size:12px;margin:6px 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{border:1px solid #e2e8f0;border-radius:14px;padding:18px;background:#fff}
+.card h3{font-size:13px}.card p{font-size:11px;color:#64748b;margin-top:5px}
+.price{font-size:18px;font-weight:800;margin-top:10px}.price em{font-size:10px;color:#64748b;font-style:normal}
+.tool{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:18px}
+.tool h4{font-size:12px}
+.tool input{width:100%;margin-top:8px;padding:10px;border:1px solid #e2e8f0;border-radius:8px;font-size:11px}
+.tool button{margin-top:8px;width:100%;padding:10px;border-radius:8px;border:none;background:#0f172a;color:#fff;font-size:11px;font-weight:700;cursor:pointer}
+.mono{font-family:monospace;font-size:10px;background:#fff;border:1px solid #e2e8f0;padding:8px;border-radius:8px;margin-top:8px;color:#16a34a}
+.ethics{background:#0f172a;color:#cbd5e1;padding:48px 24px}.ethics-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
+.footer{background:#020617;color:#475569;padding:30px 24px;text-align:center;font-size:9px}
+</style>
 </head>
-<body style="margin:0;font-family:Arial, sans-serif;background:#fff;color:#111;">
-
-<header style="padding:15px 30px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff;">
-<div style="display:flex;align-items:center;gap:15px;">
-<img src="https://github.com/krusty-uar.png" style="width:60px;height:60px;border-radius:12px;background:#000;object-fit:cover;">
-<span style="font-weight:900;letter-spacing:4px;font-size:22px;">U . A . R .</span>
+<body>
+<div class="header"><div class="header-inner"><div class="brand"><img src="assets/logo.png" alt="UAR"><b>U.A.R.</b></div><div class="menu"><a href="#servicios">SERVICIOS</a><a href="#lab">LAB</a><a href="#contacto">CONTACTO</a></div></div></div>
+<div class="hero">
+<div>
+<div class="kicker">UNIDAD DE ANALISIS Y RESPUESTA - APODACA N.L.</div>
+<div class="h1">Ciberseguridad etica que protege tu negocio.</div>
+<p class="sub">Auditoria defensiva y automatizacion segura. Liderada por Krusty Hack - Meta Bug Bounty Hunter. 100% legal.</p>
+<div style="margin-top:22px;display:flex;gap:10px"><a href="#servicios" class="btn btn-black">Ver servicios</a><a href="#lab" class="btn btn-white">Herramientas gratis</a></div>
 </div>
-<div style="display:flex;gap:20px;font-size:13px;font-weight:bold;color:#555;">
-<span>SERVICIOS</span><span>LAB</span><span>CONTACTO</span>
+<div><img class="main" src="assets/logo.png" alt="U.A.R."></div>
 </div>
-</header>
-
-<section style="padding:40px 30px;">
-<p style="background:#eef4f8;display:inline-block;padding:10px 20px;border-radius:30px;font-size:11px;letter-spacing:2px;font-weight:bold;">UNIDAD DE ANALISIS Y RESPUESTA - APODACA N.L.</p>
-<h1 style="font-size:52px;line-height:0.95;max-width:600px;margin:20px 0 0 0;font-weight:900;">Ciberseguridad<br>etica que<br>protege tu<br>negocio.</h1>
-<p style="max-width:550px;color:#5a6a7a;line-height:1.6;font-size:18px;margin-top:20px;">Unidad especializada en auditoria defensiva y automatizacion segura. Liderada por Krusty Hack - Meta Bug Bounty Hunter. 100% legal, con contrato y alcance definido.</p>
-<div style="margin-top:30px;display:flex;gap:15px;">
-<a href="#servicios" style="background:#0f1b2d;color:#fff;padding:18px 32px;border-radius:14px;text-decoration:none;font-weight:bold;">Ver servicios</a>
-<a href="#lab" style="border:1.5px solid #ddd;color:#333;padding:18px 32px;border-radius:14px;text-decoration:none;font-weight:bold;">Herramientas gratuitas</a>
+<div id="lab" class="sec" style="background:#f8fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+<h2>LABORATORIO DE SEGURIDAD - 8 HERRAMIENTAS FREE</h2>
+<p class="lead">Todo en tu navegador. Uso educativo.</p>
+<div class="grid">
+<div class="tool"><h4>Contraseña 18 chars</h4><button onclick="document.getElementById('p1').textContent=Array.from({length:18},()=> 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789!@#$%'[Math.floor(Math.random()*58)]).join('')">Generar</button><div id="p1" class="mono">Click...</div></div>
+<div class="tool"><h4>SHA256</h4><input id="s1" placeholder="Texto..."><button onclick="crypto.subtle.digest('SHA-256',new TextEncoder().encode(document.getElementById('s1').value||'UAR')).then(b=>document.getElementById('o2').textContent=Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join(''))">Hash</button><div id="o2" class="mono">...</div></div>
+<div class="tool"><h4>Base64</h4><input id="b1" placeholder="Texto..."><button onclick="try{document.getElementById('bo').textContent=btoa(document.getElementById('b1').value)}catch(e){document.getElementById('bo').textContent='Error'}">Encode</button><div id="bo" class="mono">...</div></div>
+<div class="tool"><h4>URL Encode</h4><input id="u1" placeholder="https://..."><button onclick="document.getElementById('uo').textContent=encodeURIComponent(document.getElementById('u1').value)">Encode</button><div id="uo" class="mono">...</div></div>
+<div class="tool"><h4>Revision Enlaces (2/24h)</h4><input id="v1" placeholder="https://sospechoso.com"><button onclick="let c=parseInt(localStorage.getItem('uar_scan')||'0');if(c>=2){document.getElementById('ov').textContent='Limite 2/24h';return}document.getElementById('ov').textContent='Revisado | '+document.getElementById('v1').value;localStorage.setItem('uar_scan',c+1)">Revisar</button><div id="ov" class="mono">...</div></div>
+<div class="tool"><h4>Mi Info</h4><button onclick="document.getElementById('ip').textContent=navigator.userAgent.slice(0,70)">Ver</button><div id="ip" class="mono">Click...</div></div>
+<div class="tool"><h4>Passphrase</h4><button onclick="const w=['luna','fuego','cielo','roca','rio','bosque','acero','nube'];let p=[];for(let i=0;i<4;i++)p.push(w[Math.floor(Math.random()*w.length)]+'-'+Math.floor(Math.random()*99));document.getElementById('pp').textContent=p.join('-')">Generar</button><div id="pp" class="mono">Click...</div></div>
+<div class="tool"><h4>Cabeceras</h4><button onclick="document.getElementById('hc').textContent='HSTS, CSP, X-Frame-Options DENY'">Ver</button><div id="hc" class="mono">Click...</div></div>
 </div>
-</section>
-
-<section id="servicios" style="padding:40px 30px;background:#f8fafc;border-top:1px solid #eee;">
-<h2 style="letter-spacing:3px;font-size:14px;">SERVICIOS U.A.R.</h2>
-<div style="display:grid;gap:15px;margin-top:20px;max-width:700px;">
-<div style="background:#fff;border:1px solid #eee;padding:20px;border-radius:12px;">✓ Auditoria Web Defensiva - Reporte con contrato y alcance definido</div>
-<div style="background:#fff;border:1px solid #eee;padding:20px;border-radius:12px;">✓ Hardening y Automatización Segura para PYMEs en Apodaca N.L.</div>
-<div style="background:#fff;border:1px solid #eee;padding:20px;border-radius:12px;">✓ Respuesta a Incidentes - 100% legal y ético</div>
 </div>
-</section>
-
-<section id="lab" style="padding:40px 30px;">
-<h2 style="letter-spacing:3px;font-size:14px;">LABORATORIO DE SEGURIDAD - 8 HERRAMIENTAS FREE</h2>
-<p style="color:#555;">Próximamente tus herramientas gratuitas de U.A.R. aquí.</p>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:700px;margin-top:15px;">
-<div style="border:1px dashed #ccc;padding:15px;border-radius:10px;">Herramienta 1</div>
-<div style="border:1px dashed #ccc;padding:15px;border-radius:10px;">Herramienta 2</div>
-<div style="border:1px dashed #ccc;padding:15px;border-radius:10px;">Herramienta 3</div>
-<div style="border:1px dashed #ccc;padding:15px;border-radius:10px;">Herramienta 4</div>
+<div id="servicios" class="sec">
+<h2>SERVICIOS PROFESIONALES</h2>
+<p class="lead">Con contrato y alcance. Solo defensivo.</p>
+<div class="grid">
+<div class="card"><h3>Auditoria PYME</h3><p>OWASP Top 10</p><div class="price">$799 MXN <em>/ unico</em></div></div>
+<div class="card"><h3>Auditoria Pro</h3><p>Reporte Bug Bounty</p><div class="price">$1,999 MXN</div></div>
+<div class="card"><h3>Empresarial</h3><p>Monitoreo</p><div class="price">$4,500 <em>/ mes</em></div></div>
+<div class="card"><h3>Bot Auto-Publica</h3><p>Contenido propio</p><div class="price">$299 <em>/ mes</em></div></div>
+<div class="card"><h3>Marketing Etico</h3><p>Base opt-in</p><div class="price">$499 <em>/ mes</em></div></div>
+<div class="card"><h3>WhatsApp API</h3><p>API oficial Meta</p><div class="price">$699 <em>/ mes</em></div></div>
 </div>
-</section>
-
-<footer style="padding:30px;background:#0f1b2d;color:#fff;text-align:center;">
-<p style="margin:0;letter-spacing:2px;">U.A.R. - APODACA N.L. - Krusty Hack</p>
-<p style="margin:5px 0 0 0;font-size:12px;color:#8aa;">Ciberseguridad Ética | Meta Bug Bounty Hunter</p>
-</footer>
-
+</div>
+<div class="ethics"><div class="ethics-inner"><div><h2 style="font-size:12px;letter-spacing:3px;color:#fff">WHITE HAT</h2><p style="margin-top:10px;font-size:12px">100% etico: autorizado, responsable, APIs oficiales.</p></div><div style="background:#1e293b;border:1px solid #334155;border-radius:14px;padding:18px"><p style="font-size:11px;color:#94a3b8"><b style="color:#fff">Contacto:</b><br>soporte@uar.is-a.dev<br>contacto@uar.is-a.dev<br><br>Apodaca, N.L.</p></div></div></div>
+<div class="footer">© 2026 U.A.R. | KRUSTY HACK | CIBERSEGURIDAD ETICA</div>
 </body>
 </html>
