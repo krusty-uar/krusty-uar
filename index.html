@@ -1,73 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>U.A.R. Store 2.0 | Krusty Hack</title>
+<title>U.A.R. Store 2.0 | Oficial</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#050507;color:#e5e5e5;font-family:'JetBrains Mono',monospace}
-.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;text-align:center;background:radial-gradient(ellipse at 50% 15%,rgba(255,215,0,.2),transparent 60%),#050507}
-.shield{width:320px;height:320px;border-radius:50%;border:4px solid #FFD700;background:radial-gradient(circle at 30% 30%,#FFD700,#b89600 40%,#000 75%);display:flex;align-items:center;justify-content:center;box-shadow:0 0 90px rgba(255,215,0,.6)}
-.shield b{font-size:68px;color:#000;letter-spacing:6px}
-h1{font-size:56px;letter-spacing:18px;color:#FFD700;margin-top:20px}
-.sub{color:#00ff88;letter-spacing:4px;font-size:11px;margin:12px 0}
-.desc{color:#777;font-size:11px;max-width:680px;line-height:1.7;margin:12px auto}
-.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:22px}
-.btn{padding:14px 28px;font-size:11px;font-weight:800;text-decoration:none;border:none;cursor:pointer}
-.gold{background:#FFD700;color:#000}.green{background:#00ff88;color:#000}.ghost{border:1px solid #222;color:#666;background:transparent}
-.sec{padding:60px 20px;border-top:1px solid #111;max-width:1120px;margin:0 auto}
+body{background:#020202;color:#e5e5e5;font-family:monospace}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;text-align:center;background:radial-gradient(ellipse at 50% 10%,rgba(255,215,0,.22),transparent 60%),#020202}
+.logo{width:min(92vw,680px);filter:drop-shadow(0 0 50px rgba(255,215,0,.6))}
+h1{font-size:32px;letter-spacing:10px;color:#FFD700;margin-top:16px}
+.sub{color:#00ff88;letter-spacing:3px;font-size:11px;margin:12px 0}
+.btn{padding:14px 28px;font-size:11px;font-weight:800;text-decoration:none}
+.gold{background:#FFD700;color:#000}.green{background:#00ff88;color:#000}
+.sec{padding:60px 20px;border-top:1px solid #111;max-width:1140px;margin:0 auto}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:18px}
-.card{border:1px solid #222;background:rgba(255,255,255,.02);padding:18px;text-align:left}
+.card{border:1px solid #222;background:rgba(255,255,255,.02);padding:18px}
 .price{color:#FFD700;font-weight:800;margin-top:8px}
-.out{margin-top:24px;background:rgba(255,255,255,.03);border:1px solid #1a1a1a;padding:12px;font-size:9px;color:#555;line-height:1.7;max-width:780px;text-align:left}
-input{width:100%;background:#0a0a0a;border:1px solid #333;color:#fff;padding:9px;margin-top:8px}
 .footer{padding:40px;color:#222;font-size:9px;text-align:center;border-top:1px solid #111}
 </style>
 </head>
 <body>
 <div class="hero">
-<div class="shield"><b>U.A.R.</b></div>
-<h1>U.A.R.</h1>
-<div class="sub">ETHICAL HACKER | META BUG HUNTER | APODACA N.L.</div>
-<div class="desc">Tools free 100% usables al instante. Virus scanner 2 pruebas free por dispositivo cada 24h. Premium bloqueado.</div>
-<div class="btns">
+<img class="logo" src="logo.jpg" alt="U.A.R. Logo Oficial Dorado">
+<h1>U.A.R. STORE 2.0</h1>
+<div class="sub">KRUSTY HACK | ETHICAL HACKER | META BUG HUNTER | APODACA N.L.</div>
+<div style="margin-top:20px">
+<a href="#premium" class="btn gold">🛡️ VER PREMIUM</a>
 <a href="#free" class="btn green">🟢 TOOLS FREE</a>
-<a href="#virus" class="btn gold">🛡️ VIRUS 2 PRUEBAS</a>
-<a href="#premium" class="btn ghost">🔒 PREMIUM</a>
 </div>
-<div class="out">SOPORTE: soporte@uar.is-a.dev | ventas@uar.is-a.dev → admin.uar.ethical@gmail.com<br>FUTURO: soporte@uar.mx | ventas@uar.mx | dns@uar.mx | security@uar.mx</div>
-</div>
-<div id="free" class="sec">
-<h2 style="color:#00ff88">[02] TOOLS FREE USABLES</h2>
-<div class="grid">
-<div class="card" style="border-color:#00ff88"><h3>🔑 Password 18 chars FREE</h3><button class="btn green" style="width:100%;margin-top:10px" onclick="genPass()">GENERAR AHORA</button><p id="p1" style="color:#00ff88;margin-top:10px;word-break:break-all">Click...</p></div>
-<div class="card" style="border-color:#00ff88"><h3>🔐 SHA256 Hasher FREE</h3><input id="s1" placeholder="texto"><button class="btn green" style="width:100%;margin-top:6px" onclick="doHash()">HASHEAR</button><p id="o2" style="color:#00ff88;margin-top:8px;word-break:break-all;font-size:9px">...</p></div>
-</div>
-</div>
-<div id="virus" class="sec">
-<h2 style="color:#FFD700">[03] VIRUS SCANNER 2 PRUEBAS FREE</h2>
-<div class="grid"><div class="card" style="border-color:#FFD700"><h3>🛡️ Link Scanner 2 PRUEBAS</h3><input id="v1" placeholder="https://sospechoso.com"><button id="vb" class="btn gold" style="width:100%;margin-top:8px" onclick="doScan()">ESCANEAR (1/2)</button><p id="ov" style="margin-top:10px;color:#FFD700;font-size:10px">2 pruebas por dispositivo. soporte@uar.is-a.dev</p></div></div>
 </div>
 <div id="premium" class="sec">
 <h2 style="color:#ff3b3b">[04][05] PREMIUM BLOQUEADO 🔒</h2>
 <div class="grid">
 <div class="card"><h3>🛡️ BÁSICO $799</h3><div class="price">$799 MXN 🔒</div></div>
 <div class="card"><h3>⚔️ PRO $1,999</h3><div class="price">$1,999 MXN 🔒</div></div>
-<div class="card"><h3>👑 MASTER + APP ATI $4,500/mes</h3><div class="price">$4,500/mes 🔒</div></div>
-<div class="card"><h3>🤖 BOT AUTO-PUBLICA $299/mes</h3><div class="price">$299/mes 🔒</div></div>
-<div class="card" style="border-color:#FFD700"><h3>📢 BOT PUBLICIDAD AUTO $499 HOT</h3><div class="price">$499/mes 🔥 MAS VENDIDO</div></div>
-<div class="card"><h3>💚 BOT WHATSAPP API $699/mes</h3><div class="price">$699/mes 🔒</div></div>
+<div class="card"><h3>👑 MASTER $4,500/mes</h3><div class="price">$4,500/mes 🔒</div></div>
+<div class="card"><h3>🤖 AUTO-PUBLICA $299/mes</h3><div class="price">$299/mes 🔒</div></div>
+<div class="card" style="border-color:#FFD700"><h3>📢 PUBLICIDAD AUTO $499 HOT</h3><div class="price">$499/mes 🔥</div></div>
+<div class="card"><h3>💚 WHATSAPP API $699/mes</h3><div class="price">$699/mes 🔒</div></div>
 <div class="card"><h3>🧩 PACK FULL $1,499/mes</h3><div class="price">$1,499/mes 🔒</div></div>
 </div>
 </div>
-<div class="footer">👑 U.A.R. STORE 2.0 - KRUSTY HACK | APODACA N.L. 2026</div>
-<script>
-function genPass(){const c='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%';let p='';for(let i=0;i<18;i++)p+=c[Math.floor(Math.random()*c.length)];document.getElementById('p1').textContent=p}
-async function doHash(){const t=document.getElementById('s1').value||'UAR';const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));document.getElementById('o2').textContent=Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('')}
-let c=parseInt(localStorage.getItem('uar_scan')||'0');function upd(){const el=document.getElementById('vb');if(c>=2){document.getElementById('ov').textContent='🔒 LIMITE 2 PRUEBAS - soporte@uar.is-a.dev';el.disabled=true;el.style.opacity='0.3'}else el.textContent=`ESCANEAR (${c+1}/2)`}upd();
-function doScan(){if(c>=2){document.getElementById('ov').textContent='🔒 LIMITE 2 PRUEBAS - soporte@uar.is-a.dev';return}const v=document.getElementById('v1').value||'demo.com';document.getElementById('ov').textContent=`${Math.random()>0.5?'✅ LIMPIO':'⚠️ SOSPECHOSO'} | ${v} | Prueba ${c+1}/2`;c++;localStorage.setItem('uar_scan',c);upd()}
-</script>
+<div class="footer">👑 U.A.R. STORE 2.0 - KRUSTY HACK | LOGO OFICIAL DORADO | APODACA N.L. 2026</div>
 </body>
-                                                   </html>
+</html>
