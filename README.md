@@ -1,22 +1,27 @@
-# 🛡️ U.A.R System | Krusty Hack
-### Laboratorio de Ciberseguridad - Apodaca, N.L.
+# U.A.R - UNIDAD DE ANALISIS Y RESPUESTA
+### Centro de Ciberseguridad y Análisis de Amenazas
 
-> WAF Testing Lab | Bot - U.A.R Agente (1892400995268258) | Activo desde 19 oct 2026
-
----
-
-### 🚀 Sobre mí
-Soy Krusty Hack, especialista en WAF Bypass y pruebas de seguridad.
-Este perfil es mi laboratorio oficial.
-
-### 🔧 Proyectos
-- U.A.R Agente - Bot para Threads
-- WAF Evasion Tests
-- Security Research
-
-### 📫 Contacto
-Threads: badluck4843
-Estado: 🟢 En línea
+> Laboratorio Activo - Apodaca, Nuevo León, México
+> Sistema: U.A.R Agente v1.0
 
 ---
-*U.A.R - Under Attack Response*
+
+## 🎯 Misión
+Unidad especializada en el análisis, detección y respuesta ante incidentes de ciberseguridad, pruebas de WAF y protección de infraestructura crítica.
+
+## 🔬 Áreas de Especialización
+- Análisis de Vulnerabilidades y WAF Testing
+- Respuesta a Incidentes
+- Investigación en Seguridad Ofensiva y Defensiva
+- Desarrollo de Herramientas de Automatización
+
+## 🛠️ Proyecto Activo
+**U.A.R Agente** - Sistema automatizado de monitoreo y respuesta
+ID: 1892400995268258 | Estado: Operativo desde 19 oct 2026
+
+## 📍 Contacto Profesional
+Ubicación: Apodaca, N.L.
+Modalidad: Laboratorio de Investigación
+
+---
+*U.A.R - Unidad de Análisis y Respuesta - Seguridad con Propósito*
