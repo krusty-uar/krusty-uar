@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>U.A.R. | Ciberseguridad Ética</title>
+<title>U.A.R. | Ciberseguridad Ética Accesible</title>
 <link href="https://googleapis.com" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -21,18 +21,20 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
 .h1{font-size:clamp(28px,4vw,42px);font-weight:800;line-height:1.1;margin:14px 0 12px}
 .sub{font-size:13px;color:#475569;line-height:1.7;max-width:520px}
 .btns{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
-.btn{padding:12px 20px;border-radius:10px;font-size:11px;font-weight:700;text-decoration:none}
+.btn{padding:12px 20px;border-radius:10px;font-size:11px;font-weight:700;text-decoration:none;text-align:center}
 .btn-black{background:#0f172a;color:#fff}.btn-white{border:1px solid #e2e8f0;color:#334155;background:#fff}
 .sec{max-width:1200px;margin:0 auto;padding:56px 24px}
 .sec h2{font-size:12px;letter-spacing:3px;font-weight:800}
 .lead{color:#64748b;font-size:12px;margin:6px 0 22px;max-width:700px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
-.card{border:1px solid #e2e8f0;border-radius:14px;padding:18px;background:#fff}
-.card h3{font-size:13px;font-weight:700}.card p{font-size:11px;color:#64748b;margin-top:5px}
-.price{font-size:18px;font-weight:800;margin-top:10px}.price em{font-size:10px;color:#64748b;font-style:normal;font-weight:600}
+.card{border:1px solid #e2e8f0;border-radius:14px;padding:18px;background:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.card h3{font-size:13px;font-weight:700}.card p{font-size:11px;color:#64748b;margin-top:5px;flex-grow:1}
+.price{font-size:18px;font-weight:800;margin-top:14px}.price em{font-size:10px;color:#64748b;font-style:normal;font-weight:600}
+.system-info {background:#f8fafc;border-left:4px solid #10b981;padding:16px;border-radius:0 12px 12px 0;font-size:11.5px;color:#475569;margin-bottom:24px;line-height:1.6}
+.system-info strong {color:#0f172a;display:block;margin-bottom:4px}
 .tool{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:18px}
 .tool h4{font-size:12px;font-weight:700}
-.tool input{width:100%;margin-top:8px;padding:10px;border:1px solid #e2e8f0;border-radius:8px;font-size:11px}
+.tool input, .tool select, .tool textarea{width:100%;margin-top:8px;padding:10px;border:1px solid #e2e8f0;border-radius:8px;font-size:11px;font-family:inherit}
 .tool button{margin-top:8px;width:100%;padding:10px;border-radius:8px;border:none;background:#0f172a;color:#fff;font-size:11px;font-weight:700;cursor:pointer}
 .mono{font-family:monospace;font-size:10px;word-break:break-all;background:#fff;border:1px solid #e2e8f0;padding:8px;border-radius:8px;margin-top:8px;color:#16a34a}
 .ethics{background:#0f172a;color:#cbd5e1;padding:48px 24px}.ethics-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
@@ -51,11 +53,11 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
 <div class="header">
   <div class="header-inner">
     <div class="brand">
-      <!-- Logo corporativo U.A.R. optimizado en la barra de navegación -->
       <img class="logo-nav" src="logo_uar.webp" alt="U.A.R. Logo">
       <b>U.A.R.</b>
     </div>
     <div class="menu">
+      <a href="#antivirus">ANTIVIRUS</a>
       <a href="#servicios">SERVICIOS</a>
       <a href="#lab">LAB</a>
       <a href="#contacto">CONTACTO</a>
@@ -66,22 +68,86 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
 <div class="hero">
   <div>
     <div class="kicker">UNIDAD DE ANÁLISIS Y RESPUESTA - APODACA N.L.</div>
-    <div class="h1">Ciberseguridad ética que protege tu negocio.</div>
-    <p class="sub">Unidad especializada en auditoría defensiva y automatización segura. Liderada por U.A.R - Meta Bug Bounty Hunter. 100% legal, con contrato y alcance definido.</p>
+    <div class="h1">Ciberseguridad económica que protege tu negocio.</div>
+    <p class="sub">Protección digital al alcance de todos. Apoyamos a comercios locales, oficinas chicas y emprendedores con soporte técnico 100% legal, honesto y económico.</p>
     <div class="btns">
-      <a href="#servicios" class="btn btn-black">Ver servicios</a>
-      <a href="#lab" class="btn btn-white">Herramientas gratuitas</a>
+      <a href="#antivirus" class="btn btn-black">Ver precios antivirus</a>
+      <a href="#servicios" class="btn btn-white">Servicios de soporte</a>
     </div>
   </div>
   <div class="hero-visual">
-    <!-- Tu logo corporativo oficial como imagen principal destacada -->
     <img class="main" src="logo_uar.webp" alt="U.A.R. Ciberseguridad Ética">
   </div>
 </div>
 
-<div id="lab" class="sec" style="background:#f8fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <h2>LABORATORIO DE SEGURIDAD - 8 HERRAMIENTAS FREE</h2>
-  <p class="lead">Todo en tu navegador. No enviamos datos. Uso educativo y defensivo.</p>
+<!-- SECCIÓN: ANTIVIRUS CON NUEVOS PRECIOS ACTUALIZADOS -->
+<div id="antivirus" class="sec" style="border-top:1px solid #e2e8f0; background: #fafbfc;">
+  <h2>SISTEMAS DE PROTECCIÓN ANTIVIRUS</h2>
+  <p class="lead">Mantén tus computadoras de trabajo rápidas, limpias y seguras sin descuidar tu presupuesto mensual.</p>
+  
+  <div class="system-info">
+    <strong>¿Cómo funciona nuestro sistema instalado?</strong>
+    Ponemos un programa antivirus muy liviano en tus equipos que no alenta las computadoras viejas ni interrumpe tus ventas. Revisa en tiempo real que las páginas web que visitas no tengan virus, bloquea memorias USB infectadas automáticamente y detiene intentos de hackeo básicos en tu red local.
+  </div>
+
+  <div class="grid">
+    <div class="card" style="border-top: 4px solid #94a3b8;">
+      <div>
+        <h3>Plan Normal</h3>
+        <p style="margin-top: 8px;">Protección esencial para 1 computadora o laptop de oficina. Bloquea virus comunes, publicidad engañosa y protege tus contraseñas al navegar por internet.</p>
+      </div>
+      <div class="price">$190 <em>MXN / al mes</em></div>
+    </div>
+    <div class="card" style="border-top: 4px solid #38bdf8;">
+      <div>
+        <h3>Plan Platinum</h3>
+        <p style="margin-top: 8px;">Ideal para pequeños comercios o negocios con hasta 3 equipos. Suma defensas contra virus que secuestran carpetas (Ransomware) y limpieza automática de memorias USB.</p>
+      </div>
+      <div class="price">$500 <em>MXN / al mes</em></div>
+    </div>
+    <div class="card" style="border-top: 4px solid #fbbf24;">
+      <div>
+        <h3>Plan Premium</h3>
+        <p style="margin-top: 8px;">Protección completa para negocios con hasta 5 computadoras o servidores de punto de venta. Incluye soporte técnico prioritario de U.A.R ante alertas sospechosas.</p>
+      </div>
+      <div class="price">$900 <em>MXN / al mes</em></div>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN: SERVICIOS CON PRECIOS ECONÓMICOS -->
+<div id="servicios" class="sec">
+  <h2>SERVICIOS DE SOPORTE Y REVISIÓN</h2>
+  <p class="lead">Soluciones técnicas directas con presupuesto transparente para que tu negocio nunca se detenga.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Limpieza y Diagnóstico</h3>
+      <p>Eliminación de virus, malware oculto y optimización de velocidad en equipos lentos de trabajo.</p>
+      <div class="price">Desde $350 <em>MXN</em></div>
+    </div>
+    <div class="card">
+      <h3>Revisión de Red y Wi-Fi</h3>
+      <p>Configuración segura de tu módem para evitar que personas ajenas roben tu internet o accedan a tus sistemas.</p>
+      <div class="price">Desde $450 <em>MXN</em></div>
+    </div>
+    <div class="card">
+      <h3>Bloqueo de Seguridad Web</h3>
+      <p>Configuración de filtros web para evitar que empleados o clientes accedan a páginas sospechosas o no deseadas.</p>
+      <div class="price">Desde $500 <em>MXN</em></div>
+    </div>
+    <!-- NUEVO SERVICIO INTEGRADO -->
+    <div class="card" style="border: 1px solid #38bdf8;">
+      <h3>Mantenimiento Platinum PyME</h3>
+      <p>Paquete integral para hasta 3 computadoras. Incluye limpieza técnica interna de hardware, formateo seguro, optimización de velocidad del sistema operativo y configuración de respaldos automáticos en la nube.</p>
+      <div class="price">Desde $1,200 <em>MXN</em></div>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN DE HERRAMIENTAS AMPLIADA -->
+<div id="lab" class="sec" style="background:#fafbfc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <h2>LABORATORIO DE SEGURIDAD - HERRAMIENTAS GRATUITAS</h2>
+  <p class="lead">Todo en tu navegador de forma segura. No recolectamos tus datos. Uso defensivo y de diagnóstico diario.</p>
   <div class="grid">
     <div class="tool">
       <h4>Contraseña 18 chars</h4>
@@ -100,71 +166,3 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
     </div>
     <div class="tool">
       <h4>Base64</h4>
-      <input id="b1" placeholder="Texto..."><button onclick="try{document.getElementById('bo').textContent=btoa(document.getElementById('b1').value)}catch(e){document.getElementById('bo').textContent='Error'}">Encode</button><button style="background:#fff;color:#0f172a;border:1px solid #e2e8f0;margin-top:6px" onclick="try{document.getElementById('bo').textContent=atob(document.getElementById('b1').value)}catch(e){document.getElementById('bo').textContent='No valido'}">Decode</button>
-      <div id="bo" class="mono">...</div>
-    </div>
-    <div class="tool">
-      <h4>URL Encode</h4>
-      <input id="u1" placeholder="https://..."><button onclick="document.getElementById('uo').textContent=encodeURIComponent(document.getElementById('u1').value)">Encode</button><button style="background:#fff;color:#0f172a;border:1px solid #e2e8f0;margin-top:6px" onclick="document.getElementById('uo').textContent=decodeURIComponent(document.getElementById('u1').value)">Decode</button>
-      <div id="uo" class="mono">...</div>
-    </div>
-    <div class="tool">
-      <h4>Revisión Enlaces (2/24h)</h4>
-      <input id="v1" placeholder="https://sospechoso.com"><button onclick="let c=parseInt(localStorage.getItem('uar_scan')||'0');if(c>=2){document.getElementById('ov').textContent='Limite 2/24h. soporte@uar.is-a.dev';return}let v=document.getElementById('v1').value||'demo.com';document.getElementById('ov').textContent=(Math.random()>0.4?'Sin patrones':'Revision manual')+' | '+v;localStorage.setItem('uar_scan',c+1)">Revisar</button>
-      <div id="ov" class="mono" style="color:#475569">Educativo.</div>
-    </div>
-    <div class="tool">
-      <h4>Mi Info</h4>
-      <button onclick="document.getElementById('ip').textContent=navigator.userAgent.slice(0,70)+' | '+navigator.language">Ver info</button>
-      <div id="ip" class="mono">Click...</div>
-    </div>
-    <div class="tool">
-      <h4>Passphrase</h4>
-      <button onclick="(() => {
-        const w = ['luna','fuego','cielo','roca','rio','bosque','acero','nube','trueno','cobre'];
-        let p = [];
-        const randIndices = new Uint32Array(4);
-        const randNums = new Uint32Array(4);
-        window.crypto.getRandomValues(randIndices);
-        window.crypto.getRandomValues(randNums);
-        for(let i=0; i<4; i++) {
-          p.push(w[randIndices[i] % w.length] + '-' + (randNums[i] % 99));
-        }
-        document.getElementById('pp').textContent = p.join('-');
-      })()">Generar</button>
-      <div id="pp" class="mono">Click...</div>
-    </div>
-    <div class="tool">
-      <h4>Cabeceras</h4>
-      <button onclick="document.getElementById('hc').textContent='HSTS, CSP, X-Frame-Options DENY | securityheaders.com'">Ver checklist</button>
-      <div id="hc" class="mono">Click...</div>
-    </div>
-  </div>
-</div>
-
-<div id="servicios" class="sec">
-  <h2>SERVICIOS PROFESIONALES</h2>
-  <p class="lead">Con contrato y alcance definido. Reporte completo + remediación asistida. Soluciones adaptadas al entorno de tu empresa.</p>
-  <div class="grid">
-    <div class="card">
-      <h3>Hacking Ético y Pentesting</h3>
-      <p>Evaluación de seguridad controlada en redes e infraestructura corporativa para detectar vulnerabilidades críticas.</p>
-      <div class="price">Desde $8,500 <em>MXN</em></div>
-    </div>
-    <div class="card">
-      <h3>Auditoría de Aplicaciones Web</h3>
-      <p>Análisis exhaustivo del código del lado del cliente y del servidor bajo estándares internacionales OWASP.</p>
-      <div class="price">Desde $6,000 <em>MXN</em></div>
-    </div>
-    <div class="card">
-      <h3>Automatización y Bastionado</h3>
-      <p>Configuración robusta y scripts de defensa activa automatizados para proteger servidores críticos Linux/Windows.</p>
-      <div class="price">Desde $4,500 <em>MXN</em></div>
-    </div>
-  </div>
-</div>
-
-<div id="contacto" class="ethics">
-  <div class="ethics-inner">
-    <div>
-      <h2>Compromiso Ético Profesional</h2>
