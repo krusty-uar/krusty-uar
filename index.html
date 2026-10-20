@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,12 +11,12 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
 .header{border-bottom:1px solid #e2e8f0;background:#fff;position:sticky;top:0;z-index:20}
 .header-inner{max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;align-items:center}
 .brand{display:flex;align-items:center;gap:10px}
-.brand svg{width:38px;height:38px;border-radius:6px;background:#0f172a;padding:6px}
+.brand img.logo-nav{width:38px;height:38px;object-fit:contain;border-radius:6px;background:#000;padding:2px}
 .brand b{letter-spacing:4px;font-size:14px}
 .menu a{font-size:11px;font-weight:600;color:#475569;text-decoration:none;margin-left:18px}
 .hero{max-width:1200px;margin:0 auto;padding:60px 24px 50px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
 .hero-visual{display:flex;justify-content:center;align-items:center}
-.hero svg.main{width:100%;max-width:420px;height:auto;border-radius:18px;box-shadow:0 20px 40px rgba(0,0,0,.15);background:#0f172a;padding:40px}
+.hero img.main{width:100%;max-width:420px;height:auto;border-radius:18px;box-shadow:0 20px 40px rgba(0,0,0,.15);background:#000;padding:10px}
 .kicker{font-size:10px;letter-spacing:2px;font-weight:700;color:#475569;background:#f1f5f9;padding:6px 12px;border-radius:999px;display:inline-block}
 .h1{font-size:clamp(28px,4vw,42px);font-weight:800;line-height:1.1;margin:14px 0 12px}
 .sub{font-size:13px;color:#475569;line-height:1.7;max-width:520px}
@@ -52,8 +51,8 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
 <div class="header">
   <div class="header-inner">
     <div class="brand">
-      <!-- Icono SVG de un escudo de seguridad en lugar de assets/logo.png -->
-      <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <!-- Logo corporativo U.A.R. optimizado en la barra de navegación -->
+      <img class="logo-nav" src="logo_uar.webp" alt="U.A.R. Logo">
       <b>U.A.R.</b>
     </div>
     <div class="menu">
@@ -75,11 +74,8 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
     </div>
   </div>
   <div class="hero-visual">
-    <!-- SVG Grande del escudo para la sección Hero -->
-    <svg class="main" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-      <path d="M12 8v4M12 16h.01"/>
-    </svg>
+    <!-- Tu logo corporativo oficial como imagen principal destacada -->
+    <img class="main" src="logo_uar.webp" alt="U.A.R. Ciberseguridad Ética">
   </div>
 </div>
 
@@ -162,4 +158,13 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#0f172a;line-height:1.
     </div>
     <div class="card">
       <h3>Automatización y Bastionado</h3>
-      <p>Configuración robusta y scripts de defensa activa automatizados para proteger servidores críticos linux/Windows.</p>
+      <p>Configuración robusta y scripts de defensa activa automatizados para proteger servidores críticos Linux/Windows.</p>
+      <div class="price">Desde $4,500 <em>MXN</em></div>
+    </div>
+  </div>
+</div>
+
+<div id="contacto" class="ethics">
+  <div class="ethics-inner">
+    <div>
+      <h2>Compromiso Ético Profesional</h2>
